@@ -1,8 +1,9 @@
 <template>
   <footer>
     <container>
-      <strong><router-link to="/">discord.js</router-link></strong>
-      <p>A powerful library for interacting with the Discord API</p>
+      <strong><router-link to="/">insta.js</router-link></strong>
+      <p>A powerful library for interacting with the Instagram Private API</p>
+      <b>Website originally created by <a href="https://discord.js.org">Discord.js</a></b>
       <stats />
       <a href="" id="dark-mode-link" @click="toggleDarkMode">
         <em class="fa" :class="darkMode ? 'fa-sun-o' : 'fa-moon-o'"></em>

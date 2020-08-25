@@ -5,9 +5,9 @@ const branchBlacklist = new Set(['docs', 'webpack', 'v8']);
 export default new DocsSource({
   id: 'main',
   name: 'Main library',
-  global: 'Discord',
-  repo: 'discordjs/discord.js',
-  defaultTag: 'stable',
+  global: 'Insta',
+  repo: 'androz2091/insta.js',
+  defaultTag: 'develop',
   branchFilter: branch => !branchBlacklist.has(branch) && !branch.startsWith('dependabot/'),
   tagFilter: tag => semver.gte(tag, '9.0.0'),
 });

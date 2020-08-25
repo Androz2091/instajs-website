@@ -2,73 +2,47 @@
   <div id="home">
     <slide id="jumbotron">
       <logo :light="true" :konami="konami" id="logo" />
-      <code>npm install discord.js</code><br />
+      <code>npm install insta.js</code><br />
     </slide>
 
     <section id="info">
       <div class="info-item">
         <h2>About</h2>
         <p>
-          discord.js is a powerful <a href="https://nodejs.org/">node.js</a> module that allows you to interact with the
-          <a href="https://discordapp.com/developers/docs/intro">Discord API</a> very easily.
-          It takes a much more object-oriented approach than most other JS Discord libraries, making your bot's code significantly tidier and easier to comprehend.
-        </p>
-        <p>
-          Usability, consistency, and performance are key focuses of discord.js, and it also has nearly 100% coverage of the Discord API.
-          It receives new Discord features shortly after they arrive in the API.
+          insta.js is a powerful <a href="https://nodejs.org/">node.js</a> module that allows you to interact with the
+          <a href="https://github.com/dilame/instagram-private-api">Instagram Private API</a> very easily.
+          It is object-oriented, it is fast (mainly because of its caching system), and it supports the main Instagram features to make a chatbot!
         </p>
       </div>
 
       <div class="info-item">
         <h2>Example</h2>
-        <pre><code class="javascript" v-hljs>const Discord = require('discord.js');
-const client = new Discord.Client();
+        <pre><code class="javascript" v-hljs>const Discord = require('@androz2091/insta.js');
+const client = new Insta.Client();
 
-client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
+client.on('connect', () => {
+  console.log(`Logged in as ${client.user.username}!`);
 });
 
-client.on('message', msg => {
+client.on('messageCreate', msg => {
   if (msg.content === 'ping') {
     msg.reply('Pong!');
   }
 });
 
-client.login('token');</code></pre>
+client.login('username', 'password');</code></pre>
       </div>
-
-      <div class="info-item">
-        <h2>Why?</h2>
-        <p>
-          <ul>
-            <li>Object-oriented</li>
-            <li>Speedy and efficient</li>
-            <li>Feature-rich</li>
-            <li>Flexible</li>
-            <li>100% Promise-based</li>
-          </ul>
-        </p>
-      </div>
-
-      <div class="info-item">
-        <h2>Statistics</h2>
-        <p>
-          <stats />
-        </p>
-        <p class="center">...and growing!</p>
-      </div>
-
       <div class="full-info-item">
-        <router-link to="/docs" class="big-ass-btn">Get started</router-link>
-        <a href="https://discord.gg/bRCvFy9" class="big-ass-btn discord">Discord</a>
+          <router-link to="/docs" class="big-ass-btn">Get started</router-link>
+          <a href="https://discord.gg/XuTTHmW" class="big-ass-btn discord">Discord</a>
       </div>
     </section>
   </div>
+
 </template>
 
 <script>
 import Logo from '../Logo.vue';
-import Stats from '../Stats.vue';
 import MainSource from '../../data/MainSource';
 
 export default {
@@ -76,7 +50,6 @@ export default {
   props: ['konami'],
   components: {
     Logo,
-    Stats,
   },
 
   mounted() {
