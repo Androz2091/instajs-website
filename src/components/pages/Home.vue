@@ -2,7 +2,7 @@
   <div id="home">
     <slide id="jumbotron">
       <logo :light="true" :konami="konami" id="logo" />
-      <code>npm install insta.js</code><br />
+      <code>npm install @androz2091/insta.js</code><br />
     </slide>
 
     <section id="info">
@@ -17,7 +17,7 @@
 
       <div class="info-item">
         <h2>Example</h2>
-        <pre><code class="javascript" v-hljs>const Discord = require('@androz2091/insta.js');
+        <pre><code class="javascript" v-hljs>const Insta = require('@androz2091/insta.js');
 const client = new Insta.Client();
 
 client.on('connect', () => {
