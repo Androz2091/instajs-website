@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a2ace62339efee8cd8c5",
+    "revision": "c35acc9070ffc8fe40c5",
     "url": "/css/app.c1460d3f.css"
   },
   {
-    "revision": "a9e971d6a2081b1a1f6c49fddb3b1217",
+    "revision": "8955484ec90809a559333f8cdcd3f9ec",
     "url": "/favicon.ico"
   },
   {
@@ -12,12 +12,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/logo.1ba4bf63.png"
   },
   {
-    "revision": "f00032545ce1339a79540c0c2379da81",
+    "revision": "a2d94377ef8e6994576e3447f6c25bbd",
     "url": "/index.html"
   },
   {
-    "revision": "a2ace62339efee8cd8c5",
-    "url": "/js/app.491b2b57.js"
+    "revision": "c35acc9070ffc8fe40c5",
+    "url": "/js/app.ce5cc069.js"
   },
   {
     "revision": "fa973900a5925f129ec4",
