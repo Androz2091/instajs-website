@@ -17,6 +17,32 @@ html {
   -webkit-text-size-adjust: 100%; /* 3 */
 }
 
+::-moz-selection {
+  color: #FFFFFF;
+  background: #7E33AA;
+}
+
+::selection {
+  color: #FFFFFF;
+  background: #7E33AA;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #a8b4ae; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #8134af; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7e33aa; 
+}
+
 /* Sections
    ========================================================================== */
 
