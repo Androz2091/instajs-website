@@ -7,7 +7,7 @@ export default new DocsSource({
   name: 'Main library',
   global: 'Insta',
   repo: 'androz2091/insta.js',
-  defaultTag: 'develop',
+  defaultTag: 'master',
   branchFilter: branch => !branchBlacklist.has(branch) && !branch.startsWith('dependabot/'),
   tagFilter: tag => semver.gte(tag, '9.0.0'),
 });
